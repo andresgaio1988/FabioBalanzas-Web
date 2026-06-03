@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Header.css';
 import { logoUrl } from '../config/assets';
+import { clientPortalUrl } from '../config/urls';
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
@@ -50,6 +51,15 @@ export default function Header() {
               </li>
             ))}
           </ul>
+          <a
+            href={clientPortalUrl}
+            className="btn btn-secondary header__portal"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+          >
+            Portal clientes
+          </a>
           <a href="#contacto" className="btn btn-primary header__cta" onClick={closeMenu}>
             Demo gratuita
           </a>

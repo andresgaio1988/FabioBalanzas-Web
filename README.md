@@ -41,14 +41,12 @@ Los archivos estáticos quedan en `dist/`.
 
 | Sitio | Hosting | Guía |
 |-------|---------|------|
-| Corporativo (esta SPA) | **Firebase** (recomendado) | [DEPLOY-FIREBASE.md](./DEPLOY-FIREBASE.md) |
-| Portal clientes (recargas) | **Vercel** | `apps/portal/DEPLOY.md` en el repo FBApp-web |
+| Corporativo (esta SPA) | **Firebase** | [DEPLOY-FIREBASE.md](./DEPLOY-FIREBASE.md) — **https://www.fabiobalanzas.com.ar** |
+| Portal clientes (recargas) | **Vercel** | Repo **FbApp-PortalClientes** — **https://portal.fabiobalanzas.com.ar** |
 
-### GitHub Pages (opcional)
+### GitHub Pages (opcional, legado)
 
-Sigue disponible en push a `main` con `VITE_BASE_PATH=/FbAppWeb/`.
-
-**URL:** [https://andresgaio1988.github.io/FbAppWeb/](https://andresgaio1988.github.io/FbAppWeb/)
+Sigue disponible en push a `main` con `VITE_BASE_PATH=/FbAppWeb/` → [GitHub Pages](https://andresgaio1988.github.io/FbAppWeb/)
 
 ## Estructura
 

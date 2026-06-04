@@ -27,10 +27,10 @@ Editá `.env.production`:
 
 ```env
 VITE_BASE_PATH=/
-VITE_CLIENT_PORTAL_URL=https://tu-portal.vercel.app
+VITE_CLIENT_PORTAL_URL=https://portal.fabiobalanzas.com.ar
 ```
 
-(`VITE_CLIENT_PORTAL_URL` = URL del portal después de desplegarlo en Vercel.)
+(`VITE_CLIENT_PORTAL_URL` = portal en Vercel, dominio **portal.fabiobalanzas.com.ar**.)
 
 ## 3. Build y deploy
 
@@ -40,11 +40,11 @@ npm run build
 firebase deploy --only hosting
 ```
 
-URL típica: `https://TU_PROJECT_ID.web.app`
+URL de Firebase: `https://TU_PROJECT_ID.web.app` (o dominio custom).
 
-## 4. Dominio propio (opcional)
+## 4. Dominio propio
 
-Firebase Console → Hosting → **Add custom domain**.
+Firebase Console → Hosting → **Add custom domain** → **www.fabiobalanzas.com.ar** (y redirección desde apex si aplica).
 
 ## GitHub Pages (alternativa)
 

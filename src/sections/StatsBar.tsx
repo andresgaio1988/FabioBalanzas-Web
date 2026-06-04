@@ -2,10 +2,10 @@ import ScrollReveal from '../components/ScrollReveal';
 import './StatsBar.css';
 
 const stats = [
-  { value: 'RS232', label: 'Conexión con balanza', sub: 'Protocolo EL05' },
-  { value: '2', label: 'Etapas de pesaje', sub: 'Inicial y final' },
-  { value: 'Local', label: 'Datos en su planta', sub: 'Pesaje sin depender de la nube' },
-  { value: '0', label: 'Papeles perdidos', sub: 'Todo queda registrado' },
+  { value: '24/7', label: 'Portal clientes', sub: 'Recargas y consultas online' },
+  { value: 'MP', label: 'Mercado Pago', sub: 'Recargas automáticas' },
+  { value: '2', label: 'Etapas de pesaje', sub: 'Inicial y final con neto' },
+  { value: '☁️', label: 'Sync en nube', sub: 'Multi-estación y respaldo' },
 ];
 
 export default function StatsBar() {

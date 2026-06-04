@@ -5,6 +5,8 @@ import StatsBar from './sections/StatsBar';
 import Services from './sections/Services';
 import Benefits from './sections/Benefits';
 import Product from './sections/Product';
+import Portal from './sections/Portal';
+import Ecosystem from './sections/Ecosystem';
 import Features from './sections/Features';
 import Industries from './sections/Industries';
 import Process from './sections/Process';
@@ -23,6 +25,8 @@ export default function App() {
         <Services />
         <Benefits />
         <Product />
+        <Portal />
+        <Ecosystem />
         <Features />
         <Industries />
         <Process />

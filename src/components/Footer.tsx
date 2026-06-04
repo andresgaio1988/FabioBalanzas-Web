@@ -1,4 +1,5 @@
 import { logoUrl } from '../config/assets';
+import { clientPortalUrl } from '../config/urls';
 import './Footer.css';
 
 export default function Footer() {
@@ -10,9 +11,17 @@ export default function Footer() {
         <div className="footer__brand">
           <img src={logoUrl} alt="Fabio Balanzas" className="footer__logo" />
           <p>
-            Instalación, calibración, reparación de balanzas y software FBApp
-            para gestión de pesajes industriales.
+            Balanzas industriales, FBApp en planta, portal de clientes con Mercado Pago
+            y sincronización en nube. Un partner para todo el ciclo de pesaje.
           </p>
+          <a
+            href={clientPortalUrl}
+            className="footer__portal-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Acceder al portal de clientes →
+          </a>
         </div>
 
         <div className="footer__cols">
@@ -20,23 +29,23 @@ export default function Footer() {
             <strong>Navegación</strong>
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
-            <a href="#beneficios">Beneficios</a>
-            <a href="#producto">Producto</a>
-            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#producto">FBApp</a>
+            <a href="#portal">Portal clientes</a>
+            <a href="#ecosistema">Ecosistema</a>
           </nav>
           <nav className="footer__col" aria-label="Más información">
             <strong>Más</strong>
+            <a href="#funcionalidades">Funcionalidades</a>
             <a href="#sectores">Sectores</a>
             <a href="#licencias">Licencias</a>
-            <a href="#quienes-somos">Quiénes somos</a>
             <a href="#proceso">Proceso</a>
             <a href="#contacto">Contacto</a>
           </nav>
           <div className="footer__col">
-            <strong>Producto</strong>
-            <span>FBApp v1</span>
-            <span>Pesaje industrial</span>
-            <span>Windows · .NET 8</span>
+            <strong>Plataforma</strong>
+            <span>FBApp Web 2.0</span>
+            <span>Portal + Mercado Pago</span>
+            <span>Windows · Nube Supabase</span>
           </div>
         </div>
       </div>

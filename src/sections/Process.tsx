@@ -23,8 +23,14 @@ const steps = [
   {
     number: '04',
     title: 'Entregar recibo',
-    description: 'PDF generado al instante: imprimir, enviar por email o archivar digitalmente.',
+    description: 'PDF con su marca: imprimir, enviar por email o archivar. El cliente lo ve también en el portal.',
     icon: '📧',
+  },
+  {
+    number: '05',
+    title: 'Cliente autogestiona',
+    description: 'Recarga con Mercado Pago, revisa pesajes y saldo desde el portal sin molestar a la planta.',
+    icon: '💳',
   },
 ];
 
@@ -35,7 +41,7 @@ export default function Process() {
         <ScrollReveal>
           <div className="section-header">
             <span className="section-label">Proceso</span>
-            <h2 className="section-title">4 pasos. Cero complicaciones.</h2>
+            <h2 className="section-title">5 pasos. Planta y cliente alineados.</h2>
             <p className="section-subtitle">
               Diseñado para operadores de planta: pantallas claras, flujo guiado
               y mínima curva de aprendizaje.

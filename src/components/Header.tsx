@@ -8,6 +8,8 @@ const navLinks = [
   { href: '#servicios', label: 'Servicios' },
   { href: '#beneficios', label: 'Beneficios' },
   { href: '#producto', label: 'Producto' },
+  { href: '#portal', label: 'Portal' },
+  { href: '#ecosistema', label: 'Ecosistema' },
   { href: '#funcionalidades', label: 'Funcionalidades' },
   { href: '#sectores', label: 'Sectores' },
   { href: '#licencias', label: 'Licencias' },

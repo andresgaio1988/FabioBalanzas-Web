@@ -305,6 +305,7 @@
   animation-delay: -1s;
 }
 
+.hero__float--mp,
 .hero__float--secure {
   top: 2rem;
   right: -1.25rem;
@@ -345,7 +346,8 @@
     bottom: -0.75rem;
   }
 
-  .hero__float--secure {
+  .hero__float--mp,
+.hero__float--secure {
     right: 0;
     top: -0.5rem;
   }

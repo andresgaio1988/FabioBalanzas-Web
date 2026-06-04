@@ -4,11 +4,19 @@ import './Services.css';
 const services = [
   {
     icon: '⚖️',
-    title: 'Pesajes y gestión',
+    title: 'FBApp en estación',
     description:
-      'Software FBApp para balanza LR22: registro de pesadas, clientes, recibos e historial en planta.',
+      'Software en planta: pesaje con balanza, tarjetas RFID, recibos PDF, reportes y sincronización con la nube.',
     link: '#producto',
     linkLabel: 'Ver FBApp',
+  },
+  {
+    icon: '🌐',
+    title: 'Portal de clientes',
+    description:
+      'Web para camioneras: recargas con Mercado Pago, consulta de pesajes, movimientos de saldo y descarga de reportes.',
+    link: '#portal',
+    linkLabel: 'Conocer el portal',
   },
   {
     icon: '🔧',

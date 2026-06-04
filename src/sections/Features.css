@@ -5,8 +5,14 @@
 
 .features__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
+}
+
+@media (max-width: 1100px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .features__card {

@@ -1,4 +1,5 @@
 import { IconArrowRight } from '../components/Icons';
+import { clientPortalUrl } from '../config/urls';
 import './Hero.css';
 
 export default function Hero() {
@@ -15,7 +16,7 @@ export default function Hero() {
         <div className="hero__text">
           <span className="hero__badge">
             <span className="hero__badge-dot" />
-            Software y servicio técnico · Balanzas industriales
+            Estación · Portal clientes · Mercado Pago
           </span>
 
           <h1 className="hero__title">
@@ -24,9 +25,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero__description">
-            <strong>Fabio Balanzas</strong> instala, calibra y repara balanzas industriales.
-            Con <strong>FBApp</strong> digitaliza sus pesajes: clientes identificados,
-            recibos al instante y control total en planta.
+            <strong>Fabio Balanzas</strong> instala y mantiene su balanza; con <strong>FBApp</strong>
+            digitaliza la planta y ofrece a sus clientes un <strong>portal web</strong> con recargas
+            por <strong>Mercado Pago</strong>, historial de pesajes y saldo en tiempo real.
           </p>
 
           <div className="hero__actions">
@@ -34,15 +35,20 @@ export default function Hero() {
               Solicitar demo gratuita
               <IconArrowRight />
             </a>
-            <a href="#servicios" className="btn btn-ghost btn-lg">
-              Ver servicios
+            <a
+              href={clientPortalUrl}
+              className="btn btn-secondary btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Portal clientes
             </a>
           </div>
 
           <ul className="hero__trust">
-            <li>✓ Reparaciones y calibraciones</li>
-            <li>✓ Instalación en planta</li>
-            <li>✓ Soporte local</li>
+            <li>✓ Pesaje RFID en planta</li>
+            <li>✓ Recargas Mercado Pago</li>
+            <li>✓ Soporte técnico local</li>
           </ul>
         </div>
 
@@ -95,11 +101,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hero__float hero__float--secure">
-            <span className="hero__float-icon">🔒</span>
+          <div className="hero__float hero__float--mp">
+            <span className="hero__float-icon">💳</span>
             <div>
-              <strong>Datos en planta</strong>
-              <p>Base local cifrada</p>
+              <strong>Recarga online</strong>
+              <p>Mercado Pago · Portal</p>
             </div>
           </div>
         </div>

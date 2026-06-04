@@ -5,6 +5,7 @@
 
 .cta-banner__inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -45,10 +46,16 @@
   line-height: 1.65;
 }
 
-.cta-banner__btn {
+.cta-banner__actions {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   flex-shrink: 0;
+}
+
+.cta-banner__btn {
   background: var(--fb-white) !important;
   color: var(--fb-green-dark) !important;
   box-shadow: var(--shadow-md) !important;
@@ -59,6 +66,15 @@
   box-shadow: var(--shadow-lg) !important;
 }
 
+.cta-banner__btn-secondary {
+  color: var(--fb-white) !important;
+  border: 2px solid rgba(255, 255, 255, 0.85) !important;
+}
+
+.cta-banner__btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
 @media (max-width: 768px) {
   .cta-banner__inner {
     flex-direction: column;
@@ -66,7 +82,12 @@
     padding: 2.5rem 2rem;
   }
 
-  .cta-banner__btn {
+  .cta-banner__actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cta-banner__actions .btn {
     width: 100%;
   }
 }

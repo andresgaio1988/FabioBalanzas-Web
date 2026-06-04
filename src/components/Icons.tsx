@@ -66,4 +66,40 @@ export function IconArrowRight() {
   );
 }
 
-export const featureIcons = [IconScale, IconUsers, IconArrows, IconDocument, IconShield, IconSettings] as const;
+export function IconGlobe() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function IconWallet() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" strokeLinecap="round" />
+      <path d="M3 7v10a2 2 0 0 0 2 2h16v-5" strokeLinecap="round" />
+      <path d="M18 12a2 2 0 0 0 0 4h2v-4h-2z" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function IconCloud() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export const featureIcons = [
+  IconScale,
+  IconUsers,
+  IconArrows,
+  IconDocument,
+  IconGlobe,
+  IconWallet,
+  IconShield,
+  IconCloud,
+] as const;

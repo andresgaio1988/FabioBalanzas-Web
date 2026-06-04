@@ -11,8 +11,9 @@ const before = [
 const after = [
   'Peso capturado automáticamente desde la balanza',
   'Identificación instantánea con tarjeta RFID',
-  'Recibo PDF generado y enviado por email al instante',
-  'Historial completo con búsqueda y reportes',
+  'Recibo PDF y reportes con su marca Fabio Balanzas',
+  'Clientes recargan con Mercado Pago sin ir a caja',
+  'Portal con pesajes, saldo y PDF para cada camionera',
 ];
 
 export default function Benefits() {

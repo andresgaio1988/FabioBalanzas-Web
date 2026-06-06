@@ -9,7 +9,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__top">
         <div className="footer__brand">
-          <img src={logoUrl} alt="Fabio Balanzas" className="footer__logo" />
+          <div className="footer__logo-wrap">
+            <img src={logoUrl} alt="Fabio Balanzas" className="footer__logo" />
+          </div>
           <p>
             Balanzas industriales, FBApp en planta, portal de clientes con Mercado Pago
             y sincronización en nube. Un partner para todo el ciclo de pesaje.

@@ -11,14 +11,25 @@
 }
 
 .footer__brand {
-  max-width: 300px;
+  max-width: 360px;
+}
+
+.footer__logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fb-white);
+  border-radius: 14px;
+  padding: 1rem 1.35rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
 }
 
 .footer__logo {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: 1rem;
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer__portal-link {

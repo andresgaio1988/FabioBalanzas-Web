@@ -28,9 +28,10 @@ Editá `.env.production`:
 ```env
 VITE_BASE_PATH=/
 VITE_CLIENT_PORTAL_URL=https://portal.fabiobalanzas.com.ar
+VITE_CONTACT_SUBMIT_URL=https://portal.fabiobalanzas.com.ar/api/demo-request
 ```
 
-(`VITE_CLIENT_PORTAL_URL` = portal en Vercel, dominio **portal.fabiobalanzas.com.ar**.)
+(`VITE_CLIENT_PORTAL_URL` = portal en Vercel. Mailjet y variables del portal: [docs/CONTACTO-FORMULARIO.md](./docs/CONTACTO-FORMULARIO.md).)
 
 ## 3. Build y deploy
 

@@ -80,6 +80,28 @@
   padding: 0.6rem 1rem;
   font-size: 0.8rem;
   white-space: nowrap;
+  background: var(--fb-green-muted);
+  color: var(--fb-green-dark);
+  border: 2px solid var(--fb-green);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__portal:hover {
+  background: var(--fb-green);
+  border-color: var(--fb-green);
+  color: var(--fb-white);
+}
+
+.header:not(.header--scrolled) .header__portal {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--fb-white);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.header:not(.header--scrolled) .header__portal:hover {
+  background: var(--fb-white);
+  color: var(--fb-green-dark);
+  border-color: var(--fb-white);
 }
 
 .header__cta {

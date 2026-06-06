@@ -183,14 +183,16 @@ ul {
 
 .btn-secondary {
   background: var(--fb-white);
-  color: var(--fb-gray-dark);
-  border: 2px solid var(--fb-gray);
+  color: var(--fb-green-dark);
+  border: 2px solid var(--fb-green-dark);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
-  background: var(--fb-gray-dark);
-  border-color: var(--fb-gray-dark);
+  background: var(--fb-green-dark);
+  border-color: var(--fb-green-dark);
   color: var(--fb-white);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-ghost {

@@ -23,7 +23,7 @@ export default function CtaBanner() {
               </a>
               <a
                 href={clientPortalUrl}
-                className="btn btn-ghost btn-lg cta-banner__btn-secondary"
+                className="btn btn-lg cta-banner__btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -67,12 +67,16 @@
 }
 
 .cta-banner__btn-secondary {
-  color: var(--fb-white) !important;
-  border: 2px solid rgba(255, 255, 255, 0.85) !important;
+  background: var(--fb-white) !important;
+  color: var(--fb-green-dark) !important;
+  border: 2px solid var(--fb-white) !important;
+  box-shadow: var(--shadow-md) !important;
 }
 
 .cta-banner__btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
+  background: var(--fb-off-white) !important;
+  color: var(--fb-green-dark) !important;
+  box-shadow: var(--shadow-lg) !important;
 }
 
 @media (max-width: 768px) {

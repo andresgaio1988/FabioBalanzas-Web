@@ -70,7 +70,7 @@ export default function Portal() {
               Ir al portal
               <IconArrowRight />
             </a>
-            <a href="#contacto" className="btn btn-ghost">
+            <a href="#contacto" className="btn btn-secondary">
               Quiero activarlo en mi planta
             </a>
           </div>

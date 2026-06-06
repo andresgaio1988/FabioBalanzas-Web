@@ -5,6 +5,7 @@ import { clientPortalUrl } from '../config/urls';
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
+  { href: '#quienes-somos', label: 'Quiénes somos' },
   { href: '#servicios', label: 'Servicios' },
   { href: '#beneficios', label: 'Beneficios' },
   { href: '#producto', label: 'Producto' },
@@ -13,7 +14,6 @@ const navLinks = [
   { href: '#funcionalidades', label: 'Funcionalidades' },
   { href: '#sectores', label: 'Sectores' },
   { href: '#licencias', label: 'Licencias' },
-  { href: '#quienes-somos', label: 'Quiénes somos' },
   { href: '#contacto', label: 'Contacto' },
 ];
 

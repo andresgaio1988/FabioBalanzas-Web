@@ -7,7 +7,9 @@ export default function About() {
     <section id="quienes-somos" className="about">
       <div className="container about__layout">
         <ScrollReveal className="about__visual">
-          <img src={logoUrl} alt="Fabio Balanzas" className="about__logo" />
+          <div className="about__logo-wrap">
+            <img src={logoUrl} alt="Fabio Balanzas" className="about__logo" />
+          </div>
         </ScrollReveal>
 
         <ScrollReveal className="about__content" delay={120}>

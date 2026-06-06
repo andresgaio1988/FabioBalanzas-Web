@@ -4,7 +4,7 @@
   padding-top: calc(var(--header-height) + 2rem);
   padding-bottom: 0;
   overflow: hidden;
-  background: var(--fb-gray-dark);
+  background: var(--fb-off-white);
 }
 
 .hero__bg {
@@ -16,16 +16,15 @@
 .hero__gradient {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(145deg, var(--fb-green-dark) 0%, var(--fb-green) 38%, var(--fb-gray) 72%, var(--fb-gray-dark) 100%);
+  background: linear-gradient(180deg, var(--fb-green-muted) 0%, var(--fb-off-white) 55%);
 }
 
 .hero__pattern {
   position: absolute;
   inset: 0;
-  opacity: 0.06;
-  background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0);
-  background-size: 32px 32px;
+  opacity: 0.35;
+  background-image: radial-gradient(circle at 1px 1px, rgba(107, 165, 57, 0.08) 1px, transparent 0);
+  background-size: 28px 28px;
 }
 
 .hero__orb {
@@ -36,20 +35,21 @@
 }
 
 .hero__orb--1 {
-  width: 500px;
-  height: 500px;
-  background: var(--fb-green-light);
-  opacity: 0.25;
-  top: -120px;
-  right: -80px;
+  width: 420px;
+  height: 420px;
+  background: var(--fb-green);
+  opacity: 0.08;
+  top: -80px;
+  right: -60px;
 }
 
 .hero__orb--2 {
-  width: 350px;
-  height: 350px;
-  background: rgba(255, 255, 255, 0.08);
-  bottom: 10%;
-  left: -60px;
+  width: 280px;
+  height: 280px;
+  background: var(--fb-green-dark);
+  opacity: 0.06;
+  bottom: 12%;
+  left: -40px;
 }
 
 .hero__content {
@@ -64,7 +64,7 @@
 }
 
 .hero__text {
-  color: var(--fb-white);
+  color: var(--fb-gray-dark);
 }
 
 .hero__badge {
@@ -73,20 +73,21 @@
   gap: 0.5rem;
   padding: 0.45rem 1rem 0.45rem 0.75rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--fb-white);
+  border: 1px solid rgba(88, 138, 46, 0.18);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.03em;
+  color: var(--fb-green-dark);
   margin-bottom: 1.5rem;
-  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
 }
 
 .hero__badge-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--fb-green-light);
+  background: var(--fb-green);
   animation: pulse-dot 2s ease infinite;
 }
 
@@ -96,12 +97,13 @@
   line-height: 1.08;
   margin-bottom: 2rem;
   letter-spacing: -0.03em;
+  color: var(--fb-gray-dark);
 }
 
 .hero__title-accent {
   display: block;
   margin-top: 0.15em;
-  background: linear-gradient(90deg, #d4edbc, var(--fb-white));
+  background: linear-gradient(90deg, var(--fb-green-dark), var(--fb-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -110,27 +112,27 @@
 .hero__description {
   font-size: 1.1rem;
   line-height: 1.75;
-  opacity: 0.9;
+  color: var(--fb-gray);
   max-width: 50ch;
   margin-bottom: 2rem;
 }
 
 .hero__description strong {
-  color: var(--fb-green-light);
+  color: var(--fb-green-dark);
   font-weight: 700;
 }
 
 .hero__actions .btn-secondary {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--fb-white);
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background: var(--fb-white);
+  color: var(--fb-green-dark);
+  border: 2px solid var(--fb-green);
+  box-shadow: var(--shadow-sm);
 }
 
 .hero__actions .btn-secondary:hover {
-  background: var(--fb-white);
+  background: var(--fb-green-muted);
   color: var(--fb-green-dark);
-  border-color: var(--fb-white);
+  border-color: var(--fb-green-dark);
 }
 
 .hero__actions {
@@ -146,7 +148,7 @@
   gap: 1.25rem;
   font-size: 0.85rem;
   font-weight: 600;
-  opacity: 0.85;
+  color: var(--fb-gray);
 }
 
 .hero__trust li {
@@ -163,7 +165,8 @@
 .hero__mockup {
   background: var(--fb-white);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   overflow: hidden;
   animation: float 6s ease-in-out infinite;
 }
@@ -309,6 +312,7 @@
   background: var(--fb-white);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   animation: float 5s ease-in-out infinite;
 }
 
@@ -360,7 +364,7 @@
   }
 
   .hero__float--mp,
-.hero__float--secure {
+  .hero__float--secure {
     right: 0;
     top: -0.5rem;
   }

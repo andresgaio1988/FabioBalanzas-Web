@@ -1,12 +1,12 @@
 :root {
-  /* Paleta del logo Fabio Balanzas */
+  /* Paleta alineada al portal de clientes y logo nuevo */
   --fb-green: #6ba539;
   --fb-green-dark: #588a2e;
-  --fb-green-light: #8bc34a;
-  --fb-green-muted: #e8f2df;
-  --fb-green-glow: rgba(107, 165, 57, 0.25);
-  --fb-gray: #555555;
-  --fb-gray-dark: #2a2a2a;
+  --fb-green-light: #7db347;
+  --fb-green-muted: #eef5e8;
+  --fb-green-glow: rgba(107, 165, 57, 0.18);
+  --fb-gray: #5c5c5c;
+  --fb-gray-dark: #2d2d2d;
   --fb-gray-mid: #3d3d3d;
   --fb-gray-light: #737373;
   --fb-white: #ffffff;
@@ -41,7 +41,7 @@ html {
 body {
   font-family: var(--font-sans);
   color: var(--fb-gray-dark);
-  background: var(--fb-white);
+  background: linear-gradient(180deg, var(--fb-green-muted) 0%, var(--fb-off-white) 12rem);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;

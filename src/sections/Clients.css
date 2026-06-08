@@ -1,0 +1,108 @@
+.clients {
+  padding: 5rem 0 6rem;
+  background: var(--fb-white);
+  border-top: 1px solid #eee;
+}
+
+.section-header--center {
+  text-align: center;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.section-header--center .section-subtitle {
+  margin-inline: auto;
+}
+
+.clients__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0;
+}
+
+.clients__item {
+  list-style: none;
+}
+
+.clients__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 9.5rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--fb-cream);
+  border: 1px solid #e8e8e8;
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.clients__card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(107, 165, 57, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+.clients__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 4.5rem;
+}
+
+.clients__logos--multi {
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+
+.clients__logos--multi .clients__logo {
+  max-width: calc(33% - 0.75rem);
+  max-height: 2.75rem;
+}
+
+.clients__logo {
+  max-width: 85%;
+  max-height: 4rem;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.88;
+  transition: filter var(--transition), opacity var(--transition);
+}
+
+.clients__card:hover .clients__logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.clients__name {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--fb-gray);
+  text-align: center;
+  line-height: 1.35;
+}
+
+@media (max-width: 960px) {
+  .clients__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .clients__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clients__logos--multi .clients__logo {
+    max-width: 42%;
+    max-height: 2.5rem;
+  }
+}

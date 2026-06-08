@@ -26,7 +26,7 @@ export const featuredClients: ClientEntry[] = [
     logos: [
       { src: `${clientesBase}concrete.png`, alt: 'Concrete' },
       { src: `${clientesBase}redimat.jpg`, alt: 'Redimat' },
-      { src: `${clientesBase}cr-construcciones.svg`, alt: 'CR Construcciones' },
+      { src: `${clientesBase}cr-construcciones.png`, alt: 'CR Construcciones' },
     ],
   },
   {
@@ -40,10 +40,6 @@ export const featuredClients: ClientEntry[] = [
   {
     name: 'Pelque S.A.',
     logos: [{ src: `${clientesBase}pelque.png`, alt: 'Pelque S.A.' }],
-  },
-  {
-    name: 'Arquing Vial',
-    logos: [{ src: `${clientesBase}arquing-vial.svg`, alt: 'Arquing Vial Construye' }],
   },
   {
     name: 'Sociedad Rural de Castelli',

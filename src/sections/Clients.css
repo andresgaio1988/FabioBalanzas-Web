@@ -34,8 +34,8 @@
   justify-content: center;
   gap: 1rem;
   min-height: 9.5rem;
-  padding: 1.5rem 1.25rem;
-  background: var(--fb-cream);
+  padding: 1.25rem;
+  background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: var(--radius-lg);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
@@ -52,7 +52,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 4.5rem;
+  min-height: 5rem;
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: var(--radius-md);
 }
 
 .clients__logos--multi {
@@ -66,19 +70,16 @@
 }
 
 .clients__logo {
-  max-width: 85%;
-  max-height: 4rem;
+  max-width: 88%;
+  max-height: 4.25rem;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.88;
-  transition: filter var(--transition), opacity var(--transition);
+  transition: transform var(--transition);
 }
 
 .clients__card:hover .clients__logo {
-  filter: grayscale(0%);
-  opacity: 1;
+  transform: scale(1.03);
 }
 
 .clients__name {

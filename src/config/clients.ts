@@ -19,7 +19,7 @@ export const featuredClients: ClientEntry[] = [
   },
   {
     name: 'Pavisur',
-    logos: [{ src: `${clientesBase}pavisur.svg`, alt: 'Pavisur S.A.' }],
+    logos: [{ src: `${clientesBase}pavisur.png`, alt: 'Pavisur S.A.' }],
   },
   {
     name: 'Concrete · Redimat · CR Construcciones',

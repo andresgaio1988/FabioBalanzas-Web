@@ -21,24 +21,21 @@ export default function Clients() {
 
         <ul className="clients__grid">
           {featuredClients.map((client, index) => (
-            <ScrollReveal key={client.name} delay={index * 60}>
+            <ScrollReveal key={client.name} delay={index * 50}>
               <li className="clients__item">
                 <article className="clients__card">
-                <div
-                  className={`clients__logos${client.logos.length > 1 ? ' clients__logos--multi' : ''}`}
-                >
-                  {client.logos.map((logo) => (
+                  <div
+                    className={`clients__logos clients__logos--${client.surface ?? 'light'}`}
+                  >
                     <img
-                      key={logo.alt}
-                      src={logo.src}
-                      alt={logo.alt}
+                      src={client.logo}
+                      alt={client.alt}
                       className="clients__logo"
                       loading="lazy"
                       decoding="async"
                     />
-                  ))}
-                </div>
-                <p className="clients__name">{client.name}</p>
+                  </div>
+                  <p className="clients__name">{client.name}</p>
                 </article>
               </li>
             </ScrollReveal>

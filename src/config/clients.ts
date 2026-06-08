@@ -1,52 +1,42 @@
-export type ClientLogo = {
-  src: string;
-  alt: string;
-};
+import bordigoniLogo from '../assets/clientes/bordigoni.png';
+import concreteLogo from '../assets/clientes/concrete.png';
+import crLogo from '../assets/clientes/cr-construcciones.png';
+import hormacoLogo from '../assets/clientes/hormaco.png';
+import hormatLogo from '../assets/clientes/hormat.png';
+import pavisurLogo from '../assets/clientes/pavisur.png';
+import pelqueLogo from '../assets/clientes/pelque.png';
+import redimatLogo from '../assets/clientes/redimat.jpg';
+import ruralCastelliLogo from '../assets/clientes/sociedad-rural-castelli.jpg';
+import ruralLezamaLogo from '../assets/clientes/sociedad-rural-lezama.jpg';
+
+export type LogoSurface = 'light' | 'muted' | 'dark';
 
 export type ClientEntry = {
-  /** Etiqueta visible bajo el logo (opcional si el logo ya incluye marca). */
   name: string;
-  logos: ClientLogo[];
+  logo: string;
+  alt: string;
+  /** Fondo del contenedor cuando el logo es claro o blanco. */
+  surface?: LogoSurface;
 };
 
-const clientesBase = `${import.meta.env.BASE_URL}clientes/`;
-
-/** Clientes destacados — logos desde sitios oficiales o CARBAP (sociedades rurales). */
+/** Clientes destacados — logos importados desde assets para deploy fiable. */
 export const featuredClients: ClientEntry[] = [
-  {
-    name: 'Hormaco',
-    logos: [{ src: `${clientesBase}hormaco.png`, alt: 'Hormaco' }],
-  },
-  {
-    name: 'Pavisur',
-    logos: [{ src: `${clientesBase}pavisur.png`, alt: 'Pavisur S.A.' }],
-  },
-  {
-    name: 'Concrete · Redimat · CR Construcciones',
-    logos: [
-      { src: `${clientesBase}concrete.png`, alt: 'Concrete' },
-      { src: `${clientesBase}redimat.jpg`, alt: 'Redimat' },
-      { src: `${clientesBase}cr-construcciones.png`, alt: 'CR Construcciones' },
-    ],
-  },
-  {
-    name: 'Hormat-Seda S.A.',
-    logos: [{ src: `${clientesBase}hormat.png`, alt: 'Hormat-Seda S.A.' }],
-  },
-  {
-    name: 'Bordigoni Construcciones',
-    logos: [{ src: `${clientesBase}bordigoni.png`, alt: 'Bordigoni y Cía.' }],
-  },
-  {
-    name: 'Pelque S.A.',
-    logos: [{ src: `${clientesBase}pelque.png`, alt: 'Pelque S.A.' }],
-  },
+  { name: 'Hormaco', logo: hormacoLogo, alt: 'Hormaco' },
+  { name: 'Pavisur', logo: pavisurLogo, alt: 'Pavisur S.A.' },
+  { name: 'Concrete', logo: concreteLogo, alt: 'Concrete' },
+  { name: 'Redimat', logo: redimatLogo, alt: 'Redimat' },
+  { name: 'CR Construcciones', logo: crLogo, alt: 'CR Construcciones' },
+  { name: 'Hormat-Seda S.A.', logo: hormatLogo, alt: 'Hormat-Seda S.A.', surface: 'dark' },
+  { name: 'Bordigoni Construcciones', logo: bordigoniLogo, alt: 'Bordigoni y Cía.' },
+  { name: 'Pelque S.A.', logo: pelqueLogo, alt: 'Pelque S.A.', surface: 'dark' },
   {
     name: 'Sociedad Rural de Castelli',
-    logos: [{ src: `${clientesBase}sociedad-rural-castelli.jpg`, alt: 'Sociedad Rural de Castelli' }],
+    logo: ruralCastelliLogo,
+    alt: 'Sociedad Rural de Castelli',
   },
   {
     name: 'Sociedad Rural de Lezama',
-    logos: [{ src: `${clientesBase}sociedad-rural-lezama.jpg`, alt: 'Sociedad Rural de Lezama' }],
+    logo: ruralLezamaLogo,
+    alt: 'Sociedad Rural de Lezama',
   },
 ];

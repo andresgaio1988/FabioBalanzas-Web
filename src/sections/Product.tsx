@@ -19,12 +19,10 @@ export default function Product() {
           <div className="product__logo-frame">
             <div className="product__logo-glow" aria-hidden="true" />
             <img src={logoUrl} alt="Fabio Balanzas" className="product__logo" />
-            <div className="product__version">FBApp Web 2.0</div>
+            <div className="product__version">PesaLink Cloud 2.0</div>
           </div>
           <div className="product__chip-row">
             <span className="product__chip">Windows 10+</span>
-            <span className="product__chip">.NET 8</span>
-            <span className="product__chip">SQLite cifrado</span>
           </div>
         </ScrollReveal>
 
@@ -34,7 +32,7 @@ export default function Product() {
             El software que su balanza necesitaba
           </h2>
           <p className="section-subtitle">
-            FBApp es la aplicación de estación que unifica pesaje, clientes, tarifas y documentación.
+            PesaLink es la aplicación de estación que unifica pesaje, clientes, tarifas y documentación.
             Se integra con el portal web y la nube para que sus camioneras recarguen online y
             consulten movimientos sin llamar a la planta.
           </p>

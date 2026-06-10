@@ -42,7 +42,7 @@ export default function Portal() {
             Sus clientes conectados, <span className="portal__accent">24/7</span>
           </h2>
           <p className="section-subtitle portal__lead">
-            Complemente FBApp en planta con un portal web exclusivo para cada camionera:
+            Complemente PesaLink en planta con un portal web exclusivo para cada camionera:
             recargas online, transparencia en pesajes y menos consultas telefónicas.
           </p>
 

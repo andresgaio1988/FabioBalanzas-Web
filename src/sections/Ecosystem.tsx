@@ -4,7 +4,7 @@ import './Ecosystem.css';
 const pillars = [
   {
     emoji: '🖥️',
-    title: 'FBApp en estación',
+    title: 'PesaLink en estación',
     subtitle: 'Windows en planta',
     points: [
       'Pesaje con balanza RS232 y tarjetas RFID',

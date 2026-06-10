@@ -62,7 +62,7 @@ export default function Features() {
             <span className="section-label">Funcionalidades</span>
             <h2 className="section-title">Todo lo que su planta necesita hoy</h2>
             <p className="section-subtitle">
-              FBApp en báscula, portal para camioneras y nube Fabio Balanzas: un solo proveedor
+              PesaLink en báscula, portal para camioneras y nube Fabio Balanzas: un solo proveedor
               para pesar, cobrar y informar sin planillas ni sistemas sueltos.
             </p>
           </div>

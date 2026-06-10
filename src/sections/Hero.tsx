@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero__description">
-            <strong>Fabio Balanzas</strong> instala y mantiene su balanza; con <strong>FBApp</strong>
+            <strong>Fabio Balanzas</strong> instala y mantiene su balanza; con <strong>PesaLink</strong>
             digitaliza la planta y ofrece a sus clientes un <strong>portal web</strong> con recargas
             por <strong>Mercado Pago</strong>, historial de pesajes y saldo en tiempo real.
           </p>
@@ -56,7 +56,7 @@ export default function Hero() {
           <div className="hero__mockup">
             <div className="hero__mockup-bar">
               <span /><span /><span />
-              <p>FBApp — Panel de pesaje</p>
+              <p>PesaLink — Panel de pesaje</p>
             </div>
 
             <div className="hero__mockup-body">

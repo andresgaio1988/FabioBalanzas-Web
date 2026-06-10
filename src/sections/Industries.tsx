@@ -33,7 +33,7 @@ export default function Industries() {
             <span className="section-label section-label--light">Sectores</span>
             <h2 className="section-title section-title--light">Ideal para su operación</h2>
             <p className="section-subtitle section-subtitle--light">
-              FBApp se adapta a cualquier planta que necesite
+              PesaLink se adapta a cualquier planta que necesite
               registrar pesajes con clientes identificados y documentación al instante.
             </p>
           </div>

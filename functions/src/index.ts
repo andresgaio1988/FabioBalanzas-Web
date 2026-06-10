@@ -73,7 +73,7 @@ async function sendNotificationEmail(payload: {
     from: `"${process.env.CONTACT_FROM_NAME?.trim() || 'Fabio Balanzas — Ventas'}" <${process.env.CONTACT_FROM_EMAIL?.trim() || to}>`,
     to,
     replyTo: payload.email,
-    subject: `Demo FBApp — ${payload.company}`,
+    subject: `Demo PesaLink — ${payload.company}`,
     text,
   });
 }

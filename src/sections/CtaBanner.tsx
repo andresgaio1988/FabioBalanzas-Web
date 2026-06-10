@@ -12,7 +12,7 @@ export default function CtaBanner() {
             <div className="cta-banner__text">
               <h2>¿Listo para modernizar su planta de pesaje?</h2>
               <p>
-                Le mostramos FBApp en su balanza, el portal para sus clientes y las recargas
+                Le mostramos PesaLink en su balanza, el portal para sus clientes y las recargas
                 con Mercado Pago. Demo sin compromiso en su planta o por videollamada.
               </p>
             </div>

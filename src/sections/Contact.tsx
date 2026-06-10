@@ -7,7 +7,7 @@ import './Contact.css';
 const perks = [
   'Instalación y calibración de balanzas',
   'Reparaciones con servicio técnico local',
-  'Demo de FBApp y portal de clientes',
+  'Demo de PesaLink y portal de clientes',
   'Planes Standard y Premium disponibles',
 ];
 
@@ -53,7 +53,7 @@ export default function Contact() {
           <h2 className="section-title">Hablemos de su planta</h2>
           <p className="section-subtitle">
             Complete el formulario y un especialista de Fabio Balanzas se comunicará
-            con usted para coordinar una demostración de FBApp adaptada a su operación.
+            con usted para coordinar una demostración de PesaLink adaptada a su operación.
           </p>
 
           <ul className="contact__perks">
@@ -72,7 +72,7 @@ export default function Contact() {
             </div>
             <div>
               <strong>Producto</strong>
-              <span>FBApp + Portal clientes</span>
+              <span>PesaLink + Portal clientes</span>
             </div>
           </div>
         </ScrollReveal>

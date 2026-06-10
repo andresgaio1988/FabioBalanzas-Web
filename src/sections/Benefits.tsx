@@ -22,11 +22,11 @@ export default function Benefits() {
       <div className="container">
         <ScrollReveal>
           <div className="section-header">
-            <span className="section-label">Por qué FBApp</span>
+            <span className="section-label">Por qué PesaLink</span>
             <h2 className="section-title">Deje atrás el pesaje manual</h2>
             <p className="section-subtitle">
               Cada minuto que su operador tarda anotando pesos es un minuto menos de productividad.
-              FBApp elimina la fricción y pone el foco en lo que importa: pesar bien y facturar rápido.
+              PesaLink elimina la fricción y pone el foco en lo que importa: pesar bien y facturar rápido.
             </p>
           </div>
         </ScrollReveal>
@@ -34,7 +34,7 @@ export default function Benefits() {
         <div className="benefits__compare">
           <ScrollReveal className="benefits__col benefits__col--before" delay={100}>
             <div className="benefits__col-header">
-              <span className="benefits__tag benefits__tag--gray">Sin FBApp</span>
+              <span className="benefits__tag benefits__tag--gray">Sin PesaLink</span>
               <h3>Procesos manuales</h3>
             </div>
             <ul>
@@ -49,7 +49,7 @@ export default function Benefits() {
 
           <ScrollReveal className="benefits__col benefits__col--after" delay={200}>
             <div className="benefits__col-header">
-              <span className="benefits__tag benefits__tag--green">Con FBApp</span>
+              <span className="benefits__tag benefits__tag--green">Con PesaLink</span>
               <h3>Operación digital</h3>
             </div>
             <ul>

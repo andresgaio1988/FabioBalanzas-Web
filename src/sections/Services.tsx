@@ -4,11 +4,11 @@ import './Services.css';
 const services = [
   {
     icon: '⚖️',
-    title: 'FBApp en estación',
+    title: 'PesaLink en estación',
     description:
       'Software en planta: pesaje con balanza, tarjetas RFID, recibos PDF, reportes y sincronización con la nube.',
     link: '#producto',
-    linkLabel: 'Ver FBApp',
+    linkLabel: 'Ver PesaLink',
   },
   {
     icon: '🌐',
@@ -48,7 +48,7 @@ export default function Services() {
             <h2 className="section-title">Más que software: su balanza, de punta a punta</h2>
             <p className="section-subtitle">
               Fabio Balanzas acompaña todo el ciclo de vida de su equipo: instalación,
-              calibración, reparación y gestión de pesajes con FBApp.
+              calibración, reparación y gestión de pesajes con PesaLink.
             </p>
           </div>
         </ScrollReveal>

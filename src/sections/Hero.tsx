@@ -25,9 +25,10 @@ export default function Hero() {
           </h1>
 
           <p className="hero__description">
-            <strong>Fabio Balanzas</strong> instala y mantiene su balanza; con <strong>PesaLink</strong>
-            digitaliza la planta y ofrece a sus clientes un <strong>portal web</strong> con recargas
-            por <strong>Mercado Pago</strong>, historial de pesajes y saldo en tiempo real.
+            <strong>Fabio Balanzas</strong> instala y mantiene su balanza; con{' '}
+            <strong>PesaLink Cloud 2.0</strong> digitaliza la planta y ofrece a sus clientes un{' '}
+            <strong>portal web</strong> con recargas por <strong>Mercado Pago</strong>, historial
+            de pesajes y saldo en tiempo real.
           </p>
 
           <div className="hero__actions">

@@ -4,7 +4,7 @@ El sitio corporativo envía el formulario al portal:
 
 `POST https://portal.fabiobalanzas.com.ar/api/demo-request`
 
-El correo sale con **ventas@fabiobalanzas.com.ar** vía Mailjet (misma cuenta que FBApp).
+El correo sale con **ventas@fabiobalanzas.com.ar** vía Mailjet (misma cuenta que PesaLink / portal).
 
 ## 1. Mailjet
 
@@ -13,7 +13,7 @@ El correo sale con **ventas@fabiobalanzas.com.ar** vía Mailjet (misma cuenta qu
 
 ## 2. Variables en Vercel (portal)
 
-Proyecto **FbApp-PortalClientes** → Settings → Environment Variables:
+Proyecto **FabioBalanzas-PortalClientes** → Settings → Environment Variables:
 
 | Variable | Valor |
 |----------|--------|

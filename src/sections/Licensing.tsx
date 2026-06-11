@@ -28,10 +28,11 @@ export default function Licensing() {
         <ScrollReveal>
           <div className="section-header">
             <span className="section-label">Licenciamiento</span>
-            <h2 className="section-title">Elija la edición para su planta</h2>
+            <h2 className="section-title">Elija la edición PesaLink para su planta</h2>
             <p className="section-subtitle">
-              Ambas licencias se activan por equipo con validación RSA.
-              Escale a Premium cuando necesite RFID, PDF y comunicación por email.
+              Disponible en <strong>PesaLink 1.0</strong> (estación local) y{' '}
+              <strong>PesaLink Cloud 2.0</strong> (con nube y portal). Ambas licencias se activan
+              por equipo con validación RSA. Escale a Premium cuando necesite RFID, PDF y email.
             </p>
           </div>
         </ScrollReveal>

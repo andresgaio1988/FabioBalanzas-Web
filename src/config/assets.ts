@@ -1,2 +1,2 @@
-/** Ruta al logo respetando el base path de Vite (GitHub Pages: /FbAppWeb/). */
-export const logoUrl = `${import.meta.env.BASE_URL}LogoFBAPP.jpeg`;
+/** Logo Fabio Balanzas (respeta base path de Vite). */
+export const logoUrl = `${import.meta.env.BASE_URL}fabio-balanzas-logo.jpg`;

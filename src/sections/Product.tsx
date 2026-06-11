@@ -18,8 +18,8 @@ export default function Product() {
         <ScrollReveal className="product__visual">
           <div className="product__logo-frame">
             <div className="product__logo-glow" aria-hidden="true" />
-            <img src={logoUrl} alt="Fabio Balanzas" className="product__logo" />
-            <div className="product__version">PesaLink Cloud 2.0</div>
+            <img src={logoUrl} alt="Fabio Balanzas — PesaLink" className="product__logo" />
+            <div className="product__version">PesaLink 1.0 · PesaLink Cloud 2.0</div>
           </div>
           <div className="product__chip-row">
             <span className="product__chip">Windows 10+</span>
@@ -32,9 +32,9 @@ export default function Product() {
             El software que su balanza necesitaba
           </h2>
           <p className="section-subtitle">
-            PesaLink es la aplicación de estación que unifica pesaje, clientes, tarifas y documentación.
-            Se integra con el portal web y la nube para que sus camioneras recarguen online y
-            consulten movimientos sin llamar a la planta.
+            <strong>PesaLink 1.0</strong> opera en planta de forma autónoma;{' '}
+            <strong>PesaLink Cloud 2.0</strong> suma sincronización con la nube Fabio Balanzas,
+            portal de clientes y recargas Mercado Pago. Unifica pesaje, tarifas y documentación.
           </p>
 
           <ul className="product__highlights">

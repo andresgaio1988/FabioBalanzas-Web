@@ -1,6 +1,6 @@
-# Desplegar FbAppWeb en Firebase Hosting
+# Desplegar FabioBalanzas-Web en Firebase Hosting
 
-Sitio corporativo (Vite). El **portal de clientes** va aparte en **Vercel** (ver `apps/portal/DEPLOY.md` en el repo FBApp-web-version).
+Sitio corporativo (Vite). El **portal de clientes** va aparte en **Vercel** (repo **FabioBalanzas-PortalClientes**).
 
 ## 1. Una vez
 
@@ -52,7 +52,7 @@ Firebase Console → Hosting → **Add custom domain** → **www.fabiobalanzas.c
 Si seguís usando Pages, build con:
 
 ```env
-VITE_BASE_PATH=/FbAppWeb/
+VITE_BASE_PATH=/FabioBalanzas-Web/
 ```
 
 Sin esa variable en Firebase usá siempre `VITE_BASE_PATH=/`.

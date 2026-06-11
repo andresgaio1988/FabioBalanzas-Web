@@ -1,6 +1,6 @@
-# FbAppWeb — Sitio corporativo Fabio Balanzas
+# FabioBalanzas-Web — Sitio corporativo Fabio Balanzas
 
-SPA (Single Page Application) para **Fabio Balanzas**, empresa desarrolladora del sistema **FBApp** de gestión de pesajes industriales.
+SPA para **Fabio Balanzas**: balanzas industriales, **PesaLink 1.0**, **PesaLink Cloud 2.0** y portal de clientes.
 
 ## Paleta de colores
 
@@ -44,16 +44,16 @@ Los archivos estáticos quedan en `dist/`.
 | Corporativo (esta SPA) | **Firebase** | [DEPLOY-FIREBASE.md](./DEPLOY-FIREBASE.md) — **https://www.fabiobalanzas.com.ar** |
 | Portal clientes (recargas) | **Vercel** | Repo **FabioBalanzas-PortalClientes** — **https://portal.fabiobalanzas.com.ar** |
 
-### GitHub Pages (opcional, legado)
+### GitHub Pages (opcional)
 
-Sigue disponible en push a `main` con `VITE_BASE_PATH=/FbAppWeb/` → [GitHub Pages](https://andresgaio1988.github.io/FbAppWeb/)
+Push a `main` con `VITE_BASE_PATH=/FabioBalanzas-Web/` → [GitHub Pages](https://andresgaio1988.github.io/FabioBalanzas-Web/)
 
 ## Estructura
 
 ```
-FbAppWeb/
+FabioBalanzas-Web/
 ├── public/
-│   └── LogoFBAPP.jpeg      # Logo oficial
+│   └── fabio-balanzas-logo.jpg
 ├── src/
 │   ├── components/         # Header, Footer
 │   ├── sections/           # Hero, Producto, Funcionalidades, etc.
@@ -63,8 +63,8 @@ FbAppWeb/
 
 ## Secciones
 
-1. **Inicio** — Hero con presentación de FBApp
-2. **Producto** — Descripción del sistema desktop
+1. **Inicio** — Hero con PesaLink y portal
+2. **Producto** — PesaLink 1.0 / Cloud 2.0
 3. **Funcionalidades** — RS232, clientes, pesaje 2 etapas, recibos, licencias
 4. **Proceso** — Flujo operativo en 4 pasos
 5. **Contacto** — Formulario de consulta

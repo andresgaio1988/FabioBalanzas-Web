@@ -53,10 +53,10 @@ async function sendNotificationEmail(payload) {
         `ID: ${payload.requestId}`,
     ].join('\n');
     await transporter.sendMail({
-        from: `"Fabio Balanzas Web" <${user}>`,
+        from: `"${process.env.CONTACT_FROM_NAME?.trim() || 'Fabio Balanzas — Ventas'}" <${process.env.CONTACT_FROM_EMAIL?.trim() || to}>`,
         to,
         replyTo: payload.email,
-        subject: `Demo FBApp — ${payload.company}`,
+        subject: `Demo PesaLink — ${payload.company}`,
         text,
     });
 }

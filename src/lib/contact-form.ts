@@ -12,7 +12,7 @@ type SubmitResponse = {
 
 const endpoint =
   import.meta.env.VITE_CONTACT_SUBMIT_URL ??
-  'https://portal.fabiobalanzas.com.ar/api/demo-request';
+  'https://portal.pesalink.com.ar/api/demo-request';
 
 export async function submitContactForm(data: ContactFormData): Promise<void> {
   const response = await fetch(endpoint, {

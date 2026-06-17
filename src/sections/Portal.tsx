@@ -78,7 +78,7 @@ export default function Portal() {
           <p className="portal__url">
             Disponible en{' '}
             <a href={clientPortalUrl} target="_blank" rel="noopener noreferrer">
-              portal.fabiobalanzas.com.ar
+              portal.pesalink.com.ar
             </a>
           </p>
         </ScrollReveal>
@@ -89,7 +89,7 @@ export default function Portal() {
               <span />
               <span />
               <span />
-              <div className="portal__browser-url">portal.fabiobalanzas.com.ar</div>
+              <div className="portal__browser-url">portal.pesalink.com.ar</div>
             </div>
             <div className="portal__browser-body">
               <header className="portal__mock-header">

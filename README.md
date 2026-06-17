@@ -42,7 +42,7 @@ Los archivos estáticos quedan en `dist/`.
 | Sitio | Hosting | Guía |
 |-------|---------|------|
 | Corporativo (esta SPA) | **Firebase** | [DEPLOY-FIREBASE.md](./DEPLOY-FIREBASE.md) — **https://www.fabiobalanzas.com.ar** |
-| Portal clientes (recargas) | **Vercel** | Repo **FabioBalanzas-PortalClientes** — **https://portal.fabiobalanzas.com.ar** |
+| Portal clientes (recargas) | **Vercel** | Repo **FabioBalanzas-PortalClientes** — **https://portal.pesalink.com.ar** |
 
 ### GitHub Pages (opcional)
 

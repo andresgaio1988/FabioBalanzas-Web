@@ -2,7 +2,7 @@
 
 El sitio corporativo envía el formulario al portal:
 
-`POST https://portal.fabiobalanzas.com.ar/api/demo-request`
+`POST https://portal.pesalink.com.ar/api/demo-request`
 
 El correo sale con **ventas@fabiobalanzas.com.ar** vía Mailjet (misma cuenta que PesaLink / portal).
 
@@ -30,7 +30,7 @@ Redeploy del portal tras guardar.
 En `.env.production`:
 
 ```env
-VITE_CONTACT_SUBMIT_URL=https://portal.fabiobalanzas.com.ar/api/demo-request
+VITE_CONTACT_SUBMIT_URL=https://portal.pesalink.com.ar/api/demo-request
 ```
 
 ```bash

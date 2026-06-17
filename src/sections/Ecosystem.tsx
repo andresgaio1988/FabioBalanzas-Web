@@ -15,7 +15,7 @@ const pillars = [
   {
     emoji: '🌐',
     title: 'Portal de clientes',
-    subtitle: 'portal.fabiobalanzas.com.ar',
+    subtitle: 'portal.pesalink.com.ar',
     points: [
       'Recargas con Mercado Pago',
       'Consulta de pesajes y movimientos de saldo',

@@ -1,43 +1,24 @@
-# Formulario «Solicitar demo» (Mailjet)
+# Formulario de contacto (sitio corporativo)
 
-El sitio corporativo envía el formulario al portal:
+El formulario del sitio envía la solicitud al **portal** (`/api/demo-request`). El correo sale con **ventas@pesalink.com.ar** vía Mailjet (misma cuenta que PesaLink / portal).
 
-`POST https://portal.pesalink.com.ar/api/demo-request`
+## Mailjet
 
-El correo sale con **ventas@fabiobalanzas.com.ar** vía Mailjet (misma cuenta que PesaLink / portal).
+- Remitente verificado: **ventas@pesalink.com.ar**
+- API Key + Secret Key en Firebase Functions (variables de entorno)
 
-## 1. Mailjet
-
-- Remitente verificado: **ventas@fabiobalanzas.com.ar**
-- API Key + Secret Key en Mailjet → Account → SMTP and SEND API settings
-
-## 2. Variables en Vercel (portal)
-
-Proyecto **FabioBalanzas-PortalClientes** → Settings → Environment Variables:
+## Variables (Firebase Functions)
 
 | Variable | Valor |
-|----------|--------|
-| `MAILJET_API_KEY` | API Key pública Mailjet |
-| `MAILJET_SECRET_KEY` | Secret Key Mailjet |
-| `CONTACT_FROM_EMAIL` | `ventas@fabiobalanzas.com.ar` |
-| `CONTACT_FROM_NAME` | `Fabio Balanzas — Ventas` |
-| `CONTACT_NOTIFY_EMAIL` | `ventas@fabiobalanzas.com.ar` (bandeja que recibe) |
+|----------|-------|
+| `SMTP_HOST` | `in-v3.mailjet.com` |
+| `SMTP_PORT` | `587` |
+| `SMTP_USER` | API Key pública Mailjet |
+| `SMTP_PASS` | Secret Key Mailjet |
+| `CONTACT_FROM_EMAIL` | `ventas@pesalink.com.ar` |
+| `CONTACT_FROM_NAME` | `PesaLink — Ventas` |
+| `CONTACT_NOTIFY_EMAIL` | `ventas@pesalink.com.ar` (bandeja que recibe) |
 
-Redeploy del portal tras guardar.
+## Prueba
 
-## 3. Sitio corporativo (Firebase)
-
-En `.env.production`:
-
-```env
-VITE_CONTACT_SUBMIT_URL=https://portal.pesalink.com.ar/api/demo-request
-```
-
-```bash
-npm run build
-firebase deploy --only hosting --project fabio-balanzas
-```
-
-## 4. Probar
-
-En www.fabiobalanzas.com.ar → Contacto → enviar prueba. Debe llegar a `ventas@` con **Responder** al email del visitante.
+En www.pesalink.com.ar → Contacto → enviar prueba. Debe llegar a `ventas@` con **Responder** al email del visitante.

@@ -4,4 +4,4 @@ export const clientPortalUrl =
 
 /** Sitio corporativo (esta SPA en producción). */
 export const corporateSiteUrl =
-  import.meta.env.VITE_SITE_URL ?? 'https://www.fabiobalanzas.com.ar';
+  import.meta.env.VITE_SITE_URL ?? 'https://www.pesalink.com.ar';

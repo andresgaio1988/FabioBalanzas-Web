@@ -10,6 +10,8 @@ const https_1 = require("firebase-functions/v2/https");
 const nodemailer_1 = __importDefault(require("nodemailer"));
 (0, app_1.initializeApp)();
 const allowedOrigins = [
+    'https://www.pesalink.com.ar',
+    'https://pesalink.com.ar',
     'https://www.fabiobalanzas.com.ar',
     'https://fabiobalanzas.com.ar',
     'https://fabio-balanzas.web.app',
@@ -53,7 +55,7 @@ async function sendNotificationEmail(payload) {
         `ID: ${payload.requestId}`,
     ].join('\n');
     await transporter.sendMail({
-        from: `"${process.env.CONTACT_FROM_NAME?.trim() || 'Fabio Balanzas — Ventas'}" <${process.env.CONTACT_FROM_EMAIL?.trim() || to}>`,
+        from: `"${process.env.CONTACT_FROM_NAME?.trim() || 'PesaLink — Ventas'}" <${process.env.CONTACT_FROM_EMAIL?.trim() || 'ventas@pesalink.com.ar'}>`,
         to,
         replyTo: payload.email,
         subject: `Demo PesaLink — ${payload.company}`,
